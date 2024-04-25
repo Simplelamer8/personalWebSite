@@ -111,12 +111,12 @@ import {
       company_name: "Fleek",
       icon: "",
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "October 2023 - January 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Contributed to the development of web-platform.",
+        "Utilized the TinyMCE library to develop a rich text editor that resulted in improved UX.",
+        "Improved UI by adding animations to the web page using react-spring library.",
+        "Built a personal account web page that checks user input before sending data to server.",
       ],
     },
     // {
