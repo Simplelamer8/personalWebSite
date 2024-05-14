@@ -20,15 +20,29 @@ const ServiceCard = ({index, title, icon}) => {
 }
 
 const About = () => {
+  let animationObject = {
+    hidden: {
+      opacity: 0,
+      x: -100
+    },
+    visible: {
+      opacity: 1,
+      x: 100,
+      transition: {
+        duration: 1,
+      }
+    },
+  };
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-lg max-w-3xl leading-7'>
+      <motion.p variants={animationObject} viewport={{once:true, amount: 0.25}} whileInView="visible" initial="hidden" /*variants={fadeIn("", "", 0.1, 1)}*/ className='mt-4 text-secondary text-lg max-w-3xl leading-7'>
         I am beginner front-end developer and I want to become full-stack developer
       </motion.p>
+
       <div className='mt-20 flex flex-wrap gap-20 justify-center'>
         {
           services.map((service, index) => (
